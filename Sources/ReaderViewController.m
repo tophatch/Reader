@@ -899,4 +899,15 @@
 	if (userInterfaceIdiom == UIUserInterfaceIdiomPad) if (printInteraction != nil) [printInteraction dismissAnimated:NO];
 }
 
+
+#pragma mark - TopHatch additions
+
+- (NSInteger)currentPage
+{
+    if (currentPage == 0) {
+        currentPage = NSNotFound;
+    }
+    return currentPage;
+}
+
 @end

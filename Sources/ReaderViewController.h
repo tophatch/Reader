@@ -43,4 +43,10 @@
 
 - (instancetype)initWithReaderDocument:(ReaderDocument *)object;
 
+
+#pragma mark - TopHatch additions
+
+/// returns currently displayed page or `NSNotFound` to denote no page is displayed
+- (NSInteger)currentPage;
+
 @end
